@@ -43,7 +43,7 @@
 
       <h2>3. 友達との通信対戦で扱う情報</h2>
       <p>
-        通信対戦では、Joinplayroom 社の通信サービス「Playroom」を利用し、4桁の部屋コード、ゲーム内の表示名（あらかじめ用意された単語の組み合わせ）、選んだキャラクター、操作内容、試合の状態を、同じ部屋の参加者と共有します。これらは対戦を成立させるために一時的に処理されます。通信サービスの提供者が、サービス運営のために匿名の利用状況を記録する場合があります。
+        通信対戦では、運営者が Cloudflare, Inc. のサービス上で運用する中継サーバーを利用し、4桁の部屋コード、ゲーム内の表示名（あらかじめ用意された単語の組み合わせ）、選んだキャラクター、操作内容、試合の状態を、同じ部屋の参加者に中継します。これらは対戦中にのみ一時的に扱い、運営者は保存しません。通信を成立させるために、Cloudflare が IP アドレスなどの接続情報を処理する場合があります。
       </p>
 
       <h2>4. 広告について</h2>
@@ -79,9 +79,9 @@
         <h2>Privacy Policy (English summary)</h2>
         <p>
           Dosukoi Yaminabe (Bumper Brawl 3D) has no accounts or sign-in and does not collect names, email addresses,
-          locations, contacts or photos. Game progress is stored only on your device. Online matches use the Playroom
-          service to share a 4-digit room code, a generated display name, the chosen character and game inputs with the
-          other players in the room. Optional rewarded video ads are provided by Google AdMob, which may process device
+          locations, contacts or photos. Game progress is stored only on your device. Online matches go through a relay server
+          we run on Cloudflare, which passes a 4-digit room code, a generated display name, the chosen character and game
+          inputs to the other players in the room in real time and does not store them. Optional rewarded video ads are provided by Google AdMob, which may process device
           identifiers and ad interaction data; the app requests non-personalized ads only and does not track you across
           other companies' apps or websites. Contact: <a href="mailto:atlascut.support@gmail.com">atlascut.support@gmail.com</a>.
         </p>
